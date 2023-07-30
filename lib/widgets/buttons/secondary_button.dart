@@ -57,19 +57,19 @@ class SecondaryButton extends StatelessWidget {
 
     switch (variant) {
       case SecondaryButtonVariants.positive:
-        color = BrandColors.primary;
+        color = AppColors.primary;
         child = Text(label ?? '');
         break;
       case SecondaryButtonVariants.negative:
-        color = SemanticColors.error;
+        color = AppColors.error;
         child = Text(label ?? '');
         break;
       case SecondaryButtonVariants.inActive:
-        color = AccentColors.accent3;
+        color = AppColors.accent3;
         child = Text(label ?? '');
         break;
       case SecondaryButtonVariants.loading:
-        color = BrandColors.primary;
+        color = AppColors.primary;
         child = SizedBox(
           height: fontSize,
           width: fontSize,

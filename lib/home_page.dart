@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit/demo_screens/button_screen.dart';
 import 'package:ui_kit/demo_screens/card_screen.dart';
+import 'package:ui_kit/demo_screens/color_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,6 +25,14 @@ class HomePage extends StatelessWidget {
           ...ListTile.divideTiles(
             context: context,
             tiles: [
+              ListTile(
+                title: const Text("Colors"),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const ColorScreen();
+                  }));
+                },
+              ),
               ListTile(
                 title: const Text("Button"),
                 onTap: () {

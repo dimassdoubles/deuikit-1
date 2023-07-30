@@ -56,22 +56,22 @@ class PrimaryButton extends StatelessWidget {
 
     switch (variant) {
       case PrimaryButtonVariants.positive:
-        backgroundColor = BrandColors.primary;
+        backgroundColor = AppColors.primary;
         foregroundColor = Colors.white;
         child = Text(label ?? '');
         break;
       case PrimaryButtonVariants.negative:
-        backgroundColor = SemanticColors.error;
+        backgroundColor = AppColors.error;
         foregroundColor = Colors.white;
         child = Text(label ?? '');
         break;
       case PrimaryButtonVariants.inActive:
-        backgroundColor = AccentColors.accent3;
+        backgroundColor = AppColors.accent3;
         foregroundColor = Colors.white;
         child = Text(label ?? '');
         break;
       case PrimaryButtonVariants.loading:
-        backgroundColor = BrandColors.primary;
+        backgroundColor = AppColors.primary;
         foregroundColor = Colors.white;
         child = SizedBox(
           height: fontSize,

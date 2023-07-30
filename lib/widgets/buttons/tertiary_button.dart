@@ -55,19 +55,19 @@ class TertiaryButton extends StatelessWidget {
 
     switch (variant) {
       case TertiaryButtonVariants.positive:
-        color = BrandColors.primary;
+        color = AppColors.primary;
         child = Text(label ?? '');
         break;
       case TertiaryButtonVariants.negative:
-        color = SemanticColors.error;
+        color = AppColors.error;
         child = Text(label ?? '');
         break;
       case TertiaryButtonVariants.inActive:
-        color = AccentColors.accent3;
+        color = AppColors.accent3;
         child = Text(label ?? '');
         break;
       case TertiaryButtonVariants.loading:
-        color = BrandColors.primary;
+        color = AppColors.primary;
         child = SizedBox(
           height: fontSize,
           width: fontSize,
